@@ -27,16 +27,17 @@ h1 {
     position: absolute;
 }
 
-#start {
+.start-button{
     position: absolute;
     left: 97%;
-    background-color: black;
-    color: white;
 }
 
 #drums {
     display: flex;
     justify-content: center;
-    height: 800px;
     margin-top: 100px;
+}
+
+.hidden {
+    display: none !important;
 }
