@@ -52,7 +52,7 @@ function nextStep() {
 function nextRound() {
   drumContainer.classList.add('unclickable');
   info.textContent = 'Wait for the computer';
-  heading.textContent = `Level ${level} of 20`;
+  heading.textContent = `Level ${level}`;
   level += 1;
   const nextSequence = [...sequence];
   nextSequence.push(nextStep());
@@ -73,11 +73,6 @@ function handleClick(drum) {
     return;
   }
   if (humanSequence.length === sequence.length) {
-    if (humanSequence.length === 20) {
-      resetGame('Congrats! You completed all the levels');
-      return
-    }
-
     humanSequence = [];
     info.textContent = 'Success! Keep going!';
     setTimeout(() => {
