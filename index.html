@@ -8,66 +8,61 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <nav class = 'navbar'>
-        <div class = 'container'>
-            <div class = 'buttons'>
-                <button id = 'HTP'>How to Play</button>
-            </div>
-            <h1>BeatKeeper</h1>
-            <div class = 'info-section'>
-                <button class="start-button js-start">Start</button>
-                <span class="info js-info hidden"></span>
-            </div>
+    <main class="game">
+        <header>
+          <h1 class="heading js-heading">BeatKeeper</h1>
+        </header>
+
+        <div class="info-section">
+            <button class="start-button js-start">Start</button>
+            <span class="info js-info hidden"></span>
         </div>
-    </nav>
-    <div id = 'drums'>
-        <img id = 'drumset' src="/output-onlinepngtools.png" alt = 'drums' usemap="#image-map">
+
     <section class = 'drum-container js-container unclickable'>
-        <map name="image-map">
-            <area target="" alt="HiHat" title="HiHat" coords="188,472,88" shape="circle" data-drum="HiHat">
-            <area target="" alt="Snare" title="Snare" href="" coords="397,525,95" shape="circle" data-drum="Snare">
-            <area target="" alt="Crash1" title="Crash1" href="" coords="311,263,115" shape="circle" data-drum="Crash1">
-            <area target="" alt="Ride" title="Ride" href="" coords="696,319,129" shape="circle" data-drum="Ride">
-            <area target="" alt="Crash2" title="Crash2" href="" coords="858,531,104" shape="circle" data-drum="Crash2">
-            <area target="" alt="RackTom" title="RackTom" href="" coords="428,249,425,283,417,307,408,325,393,344,382,358,396,379,419,395,449,404,475,402,494,393,515,375,528,355,534,333,531,309,522,279,497,257,460,242" shape="poly" data-drum="RackTom">
-            <area target="" alt="FloorTom" title="FloorTom" href="" coords="703,448,672,445,650,440,635,432,626,445,613,463,607,487,603,509,605,533,609,556,624,578,644,598,675,611,709,616,740,609,762,602,772,593,760,558,755,536,757,508,763,488,774,470,788,452,769,430,740,439,721,444" shape="poly" data-drum="FloorTom">
-            <area target="" alt="Kick" title="Kick" href="" coords="526,548,559,546,562,510,558,490,559,465,562,445,560,419,553,406,571,406,598,406,581,379,569,338,568,300,576,269,592,243,614,219,638,204,661,194,682,189,693,188,693,171,694,145,677,134,657,129,632,125,608,121,592,120,548,118,521,119,491,121,471,123,443,128,417,134,402,145,400,174,400,188,410,202,418,219,427,243,444,240,470,241,493,244,512,259,528,281,540,312,540,342,528,371,517,384,500,398,479,405,491,409,513,406,530,410,524,435" shape="poly" data-drum="Kick">
-        </map>
-    </section>
-        <div class="hidden">
-            <audio
-              src="/Bass-Drum-Hit-Level-6c-www.fesliyanstudios.com.mp3"
-              data-sound="Kick"
-            ></audio>
-            <audio
-              src="/Snare-Drum-Hit-Level-5b-www.fesliyanstudios.com.mp3"
-              data-sound="Snare"
-            ></audio>
-            <audio
-              src="/Crash-Cymbal-Hit-A-www.fesliyanstudios.com.mp3"
-              data-sound="Crash1"
-            ></audio>
-            <audio
-              src="/Crash-Cymbal-Hit-C-www.fesliyanstudios.com.mp3"
-              data-sound="Crash2"
-            ></audio>
-            <audio
-                src="/Floor-Tom-Drum-Hit-Level-7B-www.fesliyanstudios.com.mp3"
-                data-sound="FloorTom"
-            ></audio>
-            <audio
-                src="/Hi-Hat-Open-Hit-A2-www.fesliyanstudios.com.mp3"
-                data-sound="HiHat"
-            ></audio>
-            <audio
-                src="/Medium-Tom-Drum-Hit-Level-4A-www.fesliyanstudios.com.mp3"
-                data-sound="RackTom"
-            ></audio>
-            <audio
-                src="/Ride-Cymbal-Hit-D-www.fesliyanstudios.com.mp3"
-                data-sound="Ride"
-            ></audio>
-          </div>
+        <img id = 'drumset' src="/output-onlinepngtools.png" alt = 'drums' usemap="#image-map">
+        <div class = 'drum drum-HiHat' data-drum="HiHat">Hi-Hat</div>
+        <div class = 'drum drum-Snare' data-drum="Snare">Snare</div>\
+        <div class = 'drum drum-Kick' data-drum="Kick">Kick</div>
+        <div class = 'drum drum-RackTom' data-drum="RackTom"><br>Rack<br>Tom</div>
+        <div class = 'drum drum-Crash1' data-drum="Crash1">Crash 1</div>
+        <div class = 'drum drum-FloorTom' data-drum="FloorTom"><br>Floor<br>Tom</div>
+        <div class = 'drum drum-Ride' data-drum="Ride">Ride</div>
+        <div class = 'drum drum-Crash2' data-drum="Crash2">Crash 2</div>
+    </main>
+    
+    <div class="hidden">
+        <audio
+            src="/Bass-Drum-Hit-Level-6c-www.fesliyanstudios.com.mp3"
+            data-sound="Kick"
+        ></audio>
+        <audio
+            src="/Snare-Drum-Hit-Level-5b-www.fesliyanstudios.com.mp3"
+            data-sound="Snare"
+        ></audio>
+        <audio
+            src="/Crash-Cymbal-Hit-A-www.fesliyanstudios.com.mp3"
+            data-sound="Crash1"
+        ></audio>
+        <audio
+            src="/Crash-Cymbal-Hit-C-www.fesliyanstudios.com.mp3"
+            data-sound="Crash2"
+        ></audio>
+        <audio
+            src="/Floor-Tom-Drum-Hit-Level-7B-www.fesliyanstudios.com.mp3"
+            data-sound="FloorTom"
+        ></audio>
+        <audio
+            src="/Hi-Hat-Open-Hit-A2-www.fesliyanstudios.com.mp3"
+            data-sound="HiHat"
+        ></audio>
+        <audio
+            src="/Medium-Tom-Drum-Hit-Level-4A-www.fesliyanstudios.com.mp3"
+            data-sound="RackTom"
+        ></audio>
+        <audio
+            src="/Ride-Cymbal-Hit-D-www.fesliyanstudios.com.mp3"
+            data-sound="Ride"
+        ></audio>
     </div>
     <script type="text/javascript" src="/js/app.js"></script>
 </body>

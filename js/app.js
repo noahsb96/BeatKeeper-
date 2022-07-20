@@ -1,34 +1,26 @@
 let sequence = [];
 let humanSequence = [];
+let level = 0;
 
 const startButton = document.querySelector('.js-start');
 const info = document.querySelector('.js-info');
 
-function startGame() {
-    startButton.classList.add('hidden');
-    info.classList.remove('hidden');
-    info.textContent = 'Wait for the computer';
-    nextRound();
+function activateDrum(button) {
+  const drum = document.querySelector(`[data-drum='${button}']`);
+  const sound = document.querySelector(`[data-sound='${button}']`);
+
+  drum.classList.add('activated');
+  sound.play();
+
+  setTimeout(() => {
+    drum.classList.remove('activated');
+  }, 300);
 }
-
-let level = 0;
-
-function activateDrums(skins) {
-    const drum = document.querySelector(`[data-drum='${skins}']`);
-    const sound = document.querySelector(`[data-sound='${skins}']`);
-  
-    drum.classList.add('activated');
-    sound.play();
-  
-    setTimeout(() => {
-      drum.classList.remove('activated');
-    }, 300);
-  }
   
 function playRound(nextSequence) {
-    nextSequence.forEach((skins, index) => {
+    nextSequence.forEach((button, index) => {
       setTimeout(() => {
-        activateTile(skins);
+        activateDrum(button);
       }, (index + 1) * 600);
     });
 }
@@ -45,3 +37,12 @@ function nextRound() {
     nextSequence.push(nextStep());
     playRound(nextSequence);
 }
+
+function startGame() {
+  startButton.classList.add('hidden');
+  info.classList.remove('hidden');
+  info.textContent = 'Wait for the computer';
+  nextRound();
+}
+
+startButton.addEventListener('click', startGame);
