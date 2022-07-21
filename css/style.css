@@ -53,10 +53,10 @@ header {
 }
 
 .drum-HiHat {
-    height: 177px;
-    width: 177px;
-    margin-top: 384px;
-    margin-right: 715px;
+    height: 180px;
+    width: 180px;
+    margin-top: 373px;
+    margin-right: 718px;
     background-color: #ffb900;
     border-radius: 90px;
     position: absolute;
@@ -71,6 +71,7 @@ header {
 .drum-HiHat:focus {
   background-color: #ffb900;
   box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .drum-HiHat:active,
@@ -81,24 +82,25 @@ header {
 }
 
 .drum-Snare {
-    height: 180px;
-    width: 180px;
-    margin-top: 435px;
+    height: 208px;
+    width: 208px;
+    margin-top: 413px;
     margin-right: 301px;
     background-color: #ffb900;
-    border-radius: 90px;
+    border-radius: 104px;
     position: absolute;
     box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
     transition: 0.15s;
     text-align: center;
     font-size: 50px;
-    line-height: 165px;
+    line-height: 190px;
 }
 
 .drum-Snare:hover,
 .drum-Snare:focus {
   background-color: #ffb900;
   box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .drum-Snare:active,
@@ -109,9 +111,9 @@ header {
 }
 
 .drum-Kick {
-    height: 273px;
+    height: 290px;
     width: 300px;
-    margin-top: 126px;
+    margin-top: 110px;
     margin-right: px;
     background-color: #ffb900;
     border-radius: 30px;
@@ -126,6 +128,7 @@ header {
 .drum-Kick:focus {
   background-color: #ffb900;
   box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .drum-Kick:active,
@@ -139,20 +142,25 @@ header {
     height: 150px;
     width: 150px;
     margin-top: 250px;
-    margin-right: 185px;
+    margin-right: 195px;
     background-color: #ffb900;
     border-radius: 75px;
     position: absolute;
     box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
     transition: 0.15s;
-    text-align: center;
-    font-size: 35px;
+}
+
+.RTText {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-left: 55px;
 }
 
 .drum-RackTom:hover,
 .drum-RackTom:focus {
   background-color: #ffb900;
   box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .drum-RackTom:active,
@@ -163,24 +171,25 @@ header {
 }
 
 .drum-Crash1 {
-    height: 220px;
-    width: 220px;
-    margin-top: 155px;
-    margin-right: 465px;
+    height: 240px;
+    width: 240px;
+    margin-top: 135px;
+    margin-right: 475px;
     background-color: #ffb900;
-    border-radius: 110px;
+    border-radius: 120px;
     position: absolute;
     box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
     transition: 0.15s;
     text-align: center;
     font-size: 50px;
-    line-height: 210px;
+    line-height: 230px;
 }
 
 .drum-Crash1:hover,
 .drum-Crash1:focus {
   background-color: #ffb900;
   box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .drum-Crash1:active,
@@ -191,23 +200,28 @@ header {
 }
 
 .drum-FloorTom {
-    height: 200px;
-    width: 200px;
-    margin-top: 411px;
+    height: 230px;
+    width: 230px;
+    margin-top: 390px;
     margin-left: 315px;
     background-color: #ffb900;
-    border-radius: 100px;
+    border-radius: 115px;
     position: absolute;
     box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
     transition: 0.15s;
-    text-align: center;
-    font-size: 50px;
+}
+
+.FTText {
+  font-size: 50px;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 .drum-FloorTom:hover,
 .drum-FloorTom:focus {
   background-color: #ffb900;
   box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .drum-FloorTom:active,
@@ -218,12 +232,12 @@ header {
 }
 
 .drum-Ride {
-    height: 240px;
-    width: 240px;
-    margin-top: 198px;
-    margin-left: 305px;
+    height: 260px;
+    width: 260px;
+    margin-top: 180px;
+    margin-left: 310px;
     background-color: #ffb900;
-    border-radius: 120px;
+    border-radius: 130px;
     position: absolute;
     box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
     transition: 0.15s;
@@ -236,6 +250,7 @@ header {
 .drum-Ride:focus {
   background-color: #ffb900;
   box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .drum-Ride:active,
@@ -246,24 +261,25 @@ header {
 }
 
 .drum-Crash2 {
-    height: 200px;
-    width: 200px;
-    margin-top: 430px;
+    height: 220px;
+    width: 220px;
+    margin-top: 410px;
     margin-left: 625px;
     background-color: #ffb900;
-    border-radius: 100px;
+    border-radius: 110px;
     position: absolute;
     box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
     transition: 0.15s;
     text-align: center;
     font-size: 50px;
-    line-height: 190px;
+    line-height: 200px;
 }
 
 .drum-Crash2:hover,
 .drum-Crash2:focus {
   background-color: #ffb900;
   box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 8px #c28e07, 0 0 0 8px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .drum-Crash2:active,
