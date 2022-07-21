@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-image: url(/Unfinished-White-Oak_2-Common-scaled.jpg);
+    background-image: url(../Unfinished-White-Oak_2-Common-scaled.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
